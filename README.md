@@ -1,4 +1,4 @@
-# Shakeel Mohammed
+# Mohammed Shakeel
 
 Cloud & DevOps-focused engineering student with a strong interest in automation and scalable infrastructure.
 
