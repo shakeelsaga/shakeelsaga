@@ -1,25 +1,59 @@
 # Mohammed Shakeel
 
-Cloud & DevOps-focused engineering student with a strong interest in automation and scalable infrastructure.
+Cloud & DevOps–focused engineering student interested in automation-first infrastructure and practical tooling on AWS.
 
-• Automating AWS workflows using Python and Boto3  
-• Exploring Serverless Architectures and Infrastructure as Code  
-• Actively preparing for Summer 2026 Cloud / DevOps Internships  
-• Enjoy building small tools that eliminate repetitive manual work  
+I enjoy building systems that remove manual effort, enforce safety by default, and scale cleanly with minimal complexity.
 
 ---
 
-## Links
+## Selected Projects
 
-• LinkedIn → https://linkedin.com/in/shakeelsaga  
-• X (Twitter) → https://x.com/shakeelsaga  
-• Email → mailto:shakeelmohammedofficial@gmail.com  
+### CloudPail — AWS S3 Management TUI (Python, Boto3)
+A developer-first terminal application for managing AWS S3 without relying on verbose CLI commands or slow console workflows.
+
+• Interactive text-based UI with session persistence  
+• Region-aware S3 operations to avoid signature mismatches  
+• Safety-focused deletion workflows with preflight checks  
+• Supports recursive uploads, MIME-type handling, and presigned URLs  
+
+→ https://github.com/shakeelsaga/CloudPail
+
+---
+
+### Serverless Functions Collection — AWS Lambda Automations
+A curated set of event-driven and scheduled Lambda functions solving real DevOps and cloud-ops problems.
+
+Includes:
+• S3 → Slack notification pipeline with presigned URLs  
+• EC2 EBS snapshot lifecycle automation with cost controls  
+• Security Group auditor with auto-remediation logic  
+
+Built with a focus on least-privilege IAM, safe defaults, and clear operational boundaries.
+
+→ https://github.com/shakeelsaga/Serverless-Functions-Collection
+
+---
+
+### SourceFolio — Research Automation CLI (Python)
+A command-line tool that aggregates information from multiple public sources and exports structured reports.
+
+• Designed the core workflow and data aggregation logic  
+• Integrated external APIs and export pipelines (PDF / CSV)  
+• Leveraged existing libraries to implement a polished terminal UX  
+
+This project reflects my ability to quickly learn unfamiliar libraries and integrate them into a cohesive system.
+
+→ https://github.com/shakeelsaga/SourceFolio
 
 ---
 
 ## Tech Stack
 
-Python · AWS · Boto3 · DynamoDB · MySQL · GitHub Actions · Git · HTML  
+Python  
+AWS (EC2, Lambda, S3, IAM)  
+Boto3  
+SQL  
+Git  
 
 ---
 
@@ -29,6 +63,10 @@ Python · AWS · Boto3 · DynamoDB · MySQL · GitHub Actions · Git · HTML
 
 ![Streak](https://streak-stats.demolab.com?user=shakeelsaga&theme=github-dark&hide_border=true)
 
-![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=shakeelsaga&layout=compact&theme=github_dark&hide_border=true)
-
 ---
+
+## Links
+
+• LinkedIn → https://linkedin.com/in/shakeelsaga  
+• X → https://x.com/shakeelsaga  
+• Email → mailto:shakeelmohammedofficial@gmail.com
