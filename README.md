@@ -59,7 +59,7 @@ Git
 
 ## GitHub Activity
 
-![Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=shakeelsaga&show_icons=false&theme=github_dark&hide_border=true)
+![Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=shakeelsaga&show_icons=false&theme=github_dark&hide_border=true&include_all_commits=true)
 
 ![Streak](https://streak-stats.demolab.com?user=shakeelsaga&theme=github-dark&hide_border=true)
 
