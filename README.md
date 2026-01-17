@@ -1,72 +1,53 @@
-# Mohammed Shakeel
+# Hi there, I'm Mohammed Shakeel 👋
 
-Cloud & DevOps–focused engineering student interested in automation-first infrastructure and practical tooling on AWS.
+I’m a Computer Science student with a simple philosophy: **If I have to do a task more than twice, I script it.**
 
-I enjoy building systems that remove manual effort, enforce safety by default, and scale cleanly with minimal complexity.
+My journey into engineering started with a frustration we all share—repetitive, manual grunt work. I realized that clicking buttons in the AWS Console wasn't just boring, it was error-prone and slow. That frustration turned into an obsession with **Cloud Automation**, **Python**, and building tools that respect a developer's time.
 
----
-
-## Selected Projects
-
-### CloudPail — AWS S3 Management TUI (Python, Boto3)
-A developer-first terminal application for managing AWS S3 without relying on verbose CLI commands or slow console workflows.
-
-• Interactive text-based UI with session persistence  
-• Region-aware S3 operations to avoid signature mismatches  
-• Safety-focused deletion workflows with preflight checks  
-• Supports recursive uploads, MIME-type handling, and presigned URLs  
-
-→ https://github.com/shakeelsaga/CloudPail
+Here is what I’ve been building to fix that.
 
 ---
 
-### Serverless Functions Collection — AWS Lambda Automations
-A curated set of event-driven and scheduled Lambda functions solving real DevOps and cloud-ops problems.
+##  Selected Projects
 
-Includes:
-• S3 → Slack notification pipeline with presigned URLs  
-• EC2 EBS snapshot lifecycle automation with cost controls  
-• Security Group auditor with auto-remediation logic  
+### 1. CloudPail — Terminal-Based S3 Manager
+*The Problem:* Managing S3 buckets via the AWS Console is slow, but the standard CLI is error-prone and hard to memorize.
+*The Solution:* I built **[CloudPail](https://github.com/shakeelsaga/CloudPail)**, a Python TUI (Terminal User Interface) that combines the visual safety of a GUI with the speed of the command line.
+* **Tech:** Python, Boto3, Rich Library
+* **Impact:** Implemented "safety-first" pre-flight checks to prevent accidental deletions and automated region detection to handle cross-region buckets seamlessly.
 
-Built with a focus on least-privilege IAM, safe defaults, and clear operational boundaries.
+### 2. Serverless DevOps Automations
+*The Problem:* Manual maintenance tasks (like deleting old backups) are easily forgotten, leading to wasted costs and security risks.
+*The Solution:* I developed the **[Serverless Functions Collection](https://github.com/shakeelsaga/Serverless-Functions-Collection)**, a library of event-driven Lambda functions that act as a 24/7 operations team.
+* **Tech:** AWS Lambda, EventBridge, IAM
+* **Key Modules:** An "EBS Lifecycle Manager" that prunes snapshots older than 7 days, and a "Security Group Auditor" that auto-remediates open SSH ports.
 
-→ https://github.com/shakeelsaga/Serverless-Functions-Collection
-
----
-
-### SourceFolio — Research Automation CLI (Python)
-A command-line tool that aggregates information from multiple public sources and exports structured reports.
-
-• Designed the core workflow and data aggregation logic  
-• Integrated external APIs and export pipelines (PDF / CSV)  
-• Leveraged existing libraries to implement a polished terminal UX  
-
-This project reflects my ability to quickly learn unfamiliar libraries and integrate them into a cohesive system.
-
-→ https://github.com/shakeelsaga/SourceFolio
+### 3. SourceFolio — Research Data CLI
+*The Problem:* Aggregating data from multiple public sources for research reports was a manual, copy-paste nightmare.
+*The Solution:* I created **[SourceFolio](https://github.com/shakeelsaga/SourceFolio)**, a CLI tool that automates the research loop by fetching data from APIs and exporting structured PDF/CSV reports instantly.
+* **Tech:** Python, API Integration, ReportLab
 
 ---
 
-## Tech Stack
+##  My Toolkit
+I focus on tools that help me move fast and break fewer things.
 
-Python  
-AWS (EC2, Lambda, S3, IAM)  
-Boto3  
-SQL  
-Git  
+* **Languages:** Python (my daily driver), SQL
+* **Cloud:** AWS (Lambda, S3, EC2, IAM, EventBridge)
+* **Libraries:** Boto3, Rich, Click
 
 ---
 
-## GitHub Activity
+##  Activity
 
 ![Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=shakeelsaga&show_icons=false&theme=github_dark&hide_border=true&include_all_commits=true)
-
 ![Streak](https://streak-stats.demolab.com?user=shakeelsaga&theme=github-dark&hide_border=true)
 
 ---
 
-## Links
+##  Let's Connect
+I'm always looking for interesting problems to solve, especially in the Cloud/DevOps space. If you want to chat about automation, Python, or just say hi:
 
-• LinkedIn → https://linkedin.com/in/shakeelsaga  
-• X → https://x.com/shakeelsaga  
-• Email → mailto:shakeelmohammedofficial@gmail.com
+* **LinkedIn:** [linkedin.com/in/shakeelsaga](https://linkedin.com/in/shakeelsaga)
+* **X / Twitter:** [@shakeelsaga](https://x.com/shakeelsaga)
+* **Email:** [shakeelmohammedofficial@gmail.com](mailto:shakeelmohammedofficial@gmail.com)
