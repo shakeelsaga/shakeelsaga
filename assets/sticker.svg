@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 540" width="640" height="540" style="background:#000000;">
+  <defs>
+    <!-- 1-bit subtle dither starlight texture -->
+    <pattern id="starfield-dither" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect x="2" y="2" width="1" height="1" fill="#FFFFFF" opacity="0.3"/>
+      <rect x="10" y="10" width="1" height="1" fill="#FFFFFF" opacity="0.2"/>
+    </pattern>
+  </defs>
+
+  <!-- Deep Black Space Background -->
+  <rect width="640" height="540" fill="#000000"/>
+  <rect width="640" height="540" fill="url(#starfield-dither)"/>
+
+  <!-- ==================== BITMAP STARS & SPARKLES IN BACKGROUND ==================== -->
+  
+  <!-- Tiny single-pixel and 2x2 bitmap stars -->
+  <g fill="#FFFFFF">
+    <rect x="36" y="28" width="2" height="2"/>
+    <rect x="94" y="64" width="3" height="3"/>
+    <rect x="180" y="38" width="2" height="2"/>
+    <rect x="270" y="22" width="2" height="2"/>
+    <rect x="360" y="52" width="3" height="3"/>
+    <rect x="490" y="28" width="2" height="2"/>
+    <rect x="580" y="64" width="3" height="3"/>
+    <rect x="612" y="130" width="2" height="2"/>
+
+    <rect x="24" y="210" width="2" height="2"/>
+    <rect x="150" y="230" width="3" height="3"/>
+    <rect x="42" y="340" width="2" height="2"/>
+    <rect x="110" y="470" width="3" height="3"/>
+    <rect x="230" y="504" width="2" height="2"/>
+    <rect x="340" y="480" width="3" height="3"/>
+    <rect x="440" y="512" width="2" height="2"/>
+    <rect x="530" y="468" width="3" height="3"/>
+    <rect x="604" y="410" width="2" height="2"/>
+    <rect x="620" y="290" width="3" height="3"/>
+    <rect x="470" y="260" width="2" height="2"/>
+    <rect x="290" y="270" width="2" height="2"/>
+  </g>
+
+  <!-- Classic 1-Bit 4-Point Retro Bitmap Stars -->
+  <!-- Star 1 (Top Left) -->
+  <g transform="translate(60, 36)" fill="#FFFFFF">
+    <rect x="4" y="0" width="2" height="10"/>
+    <rect x="0" y="4" width="10" height="2"/>
+    <rect x="3" y="3" width="4" height="4"/>
+  </g>
+
+  <!-- Star 2 (Top Mid-Right) -->
+  <g transform="translate(420, 34)" fill="#FFFFFF">
+    <rect x="5" y="0" width="2" height="12"/>
+    <rect x="0" y="5" width="12" height="2"/>
+    <rect x="3" y="3" width="6" height="6"/>
+  </g>
+
+  <!-- Star 3 (Top Right) -->
+  <g transform="translate(560, 42)" fill="#FFFFFF">
+    <rect x="4" y="0" width="2" height="10"/>
+    <rect x="0" y="4" width="10" height="2"/>
+    <rect x="3" y="3" width="4" height="4"/>
+  </g>
+
+  <!-- Star 4 (Left Middle) -->
+  <g transform="translate(18, 170)" fill="#FFFFFF">
+    <rect x="5" y="0" width="2" height="12"/>
+    <rect x="0" y="5" width="12" height="2"/>
+    <rect x="3" y="3" width="6" height="6"/>
+  </g>
+
+  <!-- Star 5 (Right Middle) -->
+  <g transform="translate(600, 210)" fill="#FFFFFF">
+    <rect x="5" y="0" width="2" height="12"/>
+    <rect x="0" y="5" width="12" height="2"/>
+    <rect x="3" y="3" width="6" height="6"/>
+  </g>
+
+  <!-- Star 6 (Bottom Left) -->
+  <g transform="translate(50, 440)" fill="#FFFFFF">
+    <rect x="6" y="0" width="2" height="14"/>
+    <rect x="0" y="6" width="14" height="2"/>
+    <rect x="4" y="4" width="6" height="6"/>
+  </g>
+
+  <!-- Star 7 (Bottom Center) -->
+  <g transform="translate(300, 470)" fill="#FFFFFF">
+    <rect x="4" y="0" width="2" height="10"/>
+    <rect x="0" y="4" width="10" height="2"/>
+    <rect x="3" y="3" width="4" height="4"/>
+  </g>
+
+  <!-- Star 8 (Bottom Right) -->
+  <g transform="translate(550, 440)" fill="#FFFFFF">
+    <rect x="5" y="0" width="2" height="12"/>
+    <rect x="0" y="5" width="12" height="2"/>
+    <rect x="3" y="3" width="6" height="6"/>
+  </g>
+
+  <!-- Diamond / Sparkle stars in space -->
+  <g fill="#FFFFFF">
+    <polygon points="150,48 153,53 150,58 147,53"/>
+    <polygon points="320,38 323,43 320,48 317,43"/>
+    <polygon points="490,110 493,115 490,120 487,115"/>
+    <polygon points="34,280 37,284 34,288 31,284"/>
+    <polygon points="590,340 593,344 590,348 587,344"/>
+    <polygon points="180,480 183,485 180,490 177,485"/>
+    <polygon points="430,460 433,465 430,470 427,465"/>
+  </g>
+
+  <!-- ==================== 5 INDIVIDUAL ELEMENTS FLOATING IN SPACE ==================== -->
+
+  <!-- ==================== 1. FLOPPY DISK (Top-Left quadrant, slight tilt -8deg) ==================== -->
+  <g transform="translate(74, 96) rotate(-8 44 48)">
+    <!-- Solid white silhouette backing so lines stand out crisp on black -->
+    <polygon points="6,6 70,6 82,18 82,94 6,94" fill="#FFFFFF"/>
+    <!-- Disk Outer Body -->
+    <rect x="6" y="6" width="76" height="88" fill="#FFFFFF" stroke="#000000" stroke-width="3.5"/>
+    <!-- Top-right chamfer cut -->
+    <polygon points="70,6 82,18 82,6" fill="#000000"/>
+    <line x1="70" y1="6" x2="82" y2="18" stroke="#000000" stroke-width="3"/>
+    <!-- Metal shutter slider -->
+    <rect x="22" y="6" width="44" height="40" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+    <rect x="34" y="14" width="12" height="24" fill="#000000"/>
+    <!-- Label area -->
+    <rect x="16" y="52" width="56" height="36" fill="#000000"/>
+    <rect x="20" y="56" width="48" height="28" fill="#FFFFFF"/>
+    <line x1="24" y1="64" x2="64" y2="64" stroke="#000000" stroke-width="2.5"/>
+    <line x1="24" y1="72" x2="56" y2="72" stroke="#000000" stroke-width="2.5"/>
+    <!-- Write protect notch -->
+    <rect x="10" y="82" width="6" height="8" fill="#000000"/>
+  </g>
+
+  <!-- ==================== 2. DOCUMENT / FILE (Top-Right quadrant, slight tilt 11deg) ==================== -->
+  <g transform="translate(460, 80) rotate(11 47 50)">
+    <!-- Document solid white silhouette body with folded dog-ear corner -->
+    <polygon points="12,6 64,6 82,24 82,94 12,94" fill="#FFFFFF" stroke="#000000" stroke-width="3.5"/>
+    <!-- Dog-ear fold -->
+    <polygon points="64,6 64,24 82,24" fill="#FFFFFF" stroke="#000000" stroke-width="3.5"/>
+    <!-- Pixel text content lines -->
+    <line x1="24" y1="36" x2="70" y2="36" stroke="#000000" stroke-width="3"/>
+    <line x1="24" y1="48" x2="70" y2="48" stroke="#000000" stroke-width="3"/>
+    <line x1="24" y1="60" x2="70" y2="60" stroke="#000000" stroke-width="3"/>
+    <line x1="24" y1="72" x2="52" y2="72" stroke="#000000" stroke-width="3"/>
+  </g>
+
+  <!-- ==================== 3. MACINTOSH COMPUTER (Center, prominent floating presence, tilt 5deg) ==================== -->
+  <g transform="translate(266, 190) rotate(5 45 46)">
+    <!-- Classic 128k Macintosh Silhouette -->
+    <rect x="10" y="8" width="70" height="84" fill="#FFFFFF" stroke="#000000" stroke-width="3.5" rx="3"/>
+    <!-- Beveled CRT Screen recess -->
+    <rect x="20" y="18" width="50" height="40" fill="#000000"/>
+    <rect x="24" y="22" width="42" height="32" fill="#FFFFFF"/>
+    <!-- Happy Mac face -->
+    <rect x="32" y="30" width="4" height="6" fill="#000000"/>
+    <rect x="50" y="30" width="4" height="6" fill="#000000"/>
+    <path d="M 34 42 Q 43 47 52 42" stroke="#000000" stroke-width="2.5" fill="none"/>
+    <!-- Horizontal Floppy Drive Slot -->
+    <line x1="26" y1="74" x2="64" y2="74" stroke="#000000" stroke-width="3"/>
+    <!-- 1-bit Rainbow Logo badge -->
+    <rect x="16" y="72" width="4" height="6" fill="#000000"/>
+  </g>
+
+  <!-- ==================== 4. FOLDER (Bottom-Left quadrant, tilt 14deg) ==================== -->
+  <g transform="translate(118, 330) rotate(14 45 55)">
+    <!-- Folder back tab -->
+    <path d="M 6 18 L 36 18 L 46 28 L 84 28 L 84 92 L 6 92 Z" fill="#000000"/>
+    <!-- Folder front body in crisp white -->
+    <rect x="8" y="28" width="76" height="64" fill="#FFFFFF" stroke="#000000" stroke-width="3.5"/>
+    <rect x="16" y="38" width="60" height="44" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="4,4"/>
+    <!-- Tab line -->
+    <line x1="12" y1="20" x2="34" y2="20" stroke="#FFFFFF" stroke-width="3"/>
+  </g>
+
+  <!-- ==================== 5. TRASH CAN / BIN (Bottom-Right quadrant, tilt -12deg) ==================== -->
+  <g transform="translate(436, 320) rotate(-12 46 51)">
+    <!-- Lid handle -->
+    <rect x="36" y="8" width="20" height="8" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+    <!-- Lid rim -->
+    <rect x="12" y="16" width="68" height="12" fill="#FFFFFF" stroke="#000000" stroke-width="3.5"/>
+    <!-- Can body tapered -->
+    <polygon points="18,28 74,28 68,94 24,94" fill="#FFFFFF" stroke="#000000" stroke-width="3.5"/>
+    <!-- Ribs / Vertical corrugations -->
+    <line x1="32" y1="36" x2="34" y2="86" stroke="#000000" stroke-width="3"/>
+    <line x1="46" y1="36" x2="46" y2="86" stroke="#000000" stroke-width="3"/>
+    <line x1="60" y1="36" x2="58" y2="86" stroke="#000000" stroke-width="3"/>
+  </g>
+</svg>

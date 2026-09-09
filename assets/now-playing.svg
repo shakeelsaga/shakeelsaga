@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 540" width="640" height="540" style="background:#000000;">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:ital,wght@1,600&amp;family=Silkscreen:wght@400;700&amp;display=swap');
+      .title-font { font-family: 'Silkscreen', monospace; font-size: 15px; font-weight: bold; fill: #000000; letter-spacing: 1.5px; }
+      .song-serif { font-family: 'Cinzel', serif; font-style: italic; font-weight: 700; font-size: 30px; fill: #000000; letter-spacing: 0.5px; }
+      .artist-font { font-family: 'Silkscreen', monospace; font-size: 16px; font-weight: bold; fill: #000000; letter-spacing: 2px; }
+      .meta-font { font-family: 'Silkscreen', monospace; font-size: 12px; fill: #000000; }
+    </style>
+    <pattern id="np-stripes" width="4" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="1" x2="4" y2="1" stroke="#000000" stroke-width="2"/>
+    </pattern>
+    <pattern id="volume-dots" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="2" height="2" fill="#000000"/>
+    </pattern>
+  </defs>
+
+  <!-- Hard Black Offset Shadow -->
+  <rect x="12" y="12" width="618" height="518" fill="#000000"/>
+
+  <!-- Main Window Body -->
+  <rect x="6" y="6" width="620" height="520" fill="#FBFBFA" stroke="#000000" stroke-width="4"/>
+  <rect x="12" y="12" width="608" height="508" fill="none" stroke="#000000" stroke-width="2"/>
+
+  <!-- Window Title Bar -->
+  <rect x="16" y="16" width="600" height="48" fill="url(#np-stripes)" stroke="#000000" stroke-width="2"/>
+  <!-- Close Box -->
+  <rect x="26" y="26" width="28" height="28" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+  <!-- Title Plaque -->
+  <rect x="210" y="24" width="220" height="32" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="320" y="46" text-anchor="middle" class="title-font">NOW PLAYING</text>
+  <!-- Right Collapse Widget -->
+  <rect x="580" y="26" width="28" height="28" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+
+  <!-- Inner Player Cassette / Desk Accessory Window -->
+  <rect x="36" y="86" width="560" height="200" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+  
+  <!-- Left Side: Fallen Star 1-Bit Bitmap Motif Box -->
+  <g transform="translate(56, 106)">
+    <rect x="0" y="0" width="160" height="160" fill="#000000"/>
+    <rect x="6" y="6" width="148" height="148" fill="#FBFBFA" stroke="#000000" stroke-width="2"/>
+    
+    <!-- Diagonal falling trails -->
+    <line x1="24" y1="24" x2="60" y2="60" stroke="#000000" stroke-width="3" stroke-dasharray="6,6"/>
+    <line x1="44" y1="20" x2="80" y2="56" stroke="#000000" stroke-width="2" stroke-dasharray="4,4"/>
+    <line x1="20" y1="44" x2="56" y2="80" stroke="#000000" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- Fallen Star 1-Bit Pixelated Star Icon -->
+    <path d="M 94 62 L 102 84 L 126 84 L 106 98 L 114 120 L 94 106 L 74 120 L 82 98 L 62 84 L 86 84 Z" fill="#000000"/>
+    <!-- Center white twinkle dot -->
+    <rect x="92" y="88" width="4" height="4" fill="#FFFFFF"/>
+    
+    <text x="80" y="146" text-anchor="middle" font-family="'Silkscreen', monospace" font-size="10" fill="#000000" letter-spacing="1">AUDIO.DA 1.0</text>
+  </g>
+
+  <!-- Right Side: Track info & Audio Specs -->
+  <g transform="translate(240, 116)">
+    <rect x="0" y="0" width="94" height="20" fill="#000000"/>
+    <text x="47" y="14" text-anchor="middle" font-family="'Silkscreen', monospace" font-size="10" fill="#FFFFFF" letter-spacing="1.5">AUDIO TAPE</text>
+
+    <!-- Track Name: Fallen Star in Argent Pixel CF Italic style -->
+    <text x="0" y="60" class="song-serif">Fallen Star</text>
+
+    <!-- Artist: The Neighbourhood in Chicago bitmap font -->
+    <text x="0" y="94" class="artist-font">The Neighbourhood</text>
+
+    <!-- Tiny playback timestamp & Bitrate status -->
+    <text x="0" y="132" class="meta-font">02:44 / 03:26  [22.05 kHz 1-BIT]</text>
+  </g>
+
+  <!-- 1-Bit Audio Progress Line -->
+  <g transform="translate(36, 314)">
+    <rect x="0" y="0" width="560" height="18" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+    <!-- Progress fill dithered/solid -->
+    <rect x="2" y="2" width="370" height="14" fill="#000000"/>
+    <!-- Playhead thumb -->
+    <rect x="366" y="-6" width="16" height="30" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+    <line x1="374" y1="-2" x2="374" y2="20" stroke="#000000" stroke-width="2"/>
+  </g>
+
+  <!-- Classic Macintosh Transport Controls (Prev, Play, Pause, Next, Speaker) -->
+  <g transform="translate(36, 356)">
+    <!-- Prev Button -->
+    <rect x="0" y="0" width="96" height="52" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+    <polygon points="40,26 60,14 60,38" fill="#000000"/>
+    <polygon points="56,26 76,14 76,38" fill="#000000"/>
+    <rect x="28" y="14" width="6" height="24" fill="#000000"/>
+
+    <!-- Play/Pause Button (Active/Depressed inverse appearance) -->
+    <rect x="116" y="0" width="116" height="52" fill="#000000" stroke="#000000" stroke-width="3"/>
+    <polygon points="152,14 176,26 152,38" fill="#FFFFFF"/>
+    <rect x="186" y="14" width="6" height="24" fill="#FFFFFF"/>
+    <rect x="198" y="14" width="6" height="24" fill="#FFFFFF"/>
+
+    <!-- Next Button -->
+    <rect x="252" y="0" width="96" height="52" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+    <polygon points="288,14 268,26 268,38" fill="#000000" transform="rotate(180 278 26)"/>
+    <polygon points="304,14 284,26 284,38" fill="#000000" transform="rotate(180 294 26)"/>
+    <rect x="318" y="14" width="6" height="24" fill="#000000"/>
+
+    <!-- Tiny Volume Speaker & 1-bit Slider -->
+    <g transform="translate(380, 8)">
+      <!-- 1-bit Speaker icon -->
+      <polygon points="12,18 20,18 30,8 30,28 20,18" fill="#000000"/>
+      <path d="M 34 12 Q 38 18 34 24" fill="none" stroke="#000000" stroke-width="2"/>
+      <path d="M 38 8 Q 44 18 38 28" fill="none" stroke="#000000" stroke-width="2"/>
+      <!-- Volume Slider track -->
+      <rect x="52" y="15" width="120" height="6" fill="#000000"/>
+      <rect x="120" y="4" width="16" height="28" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Bottom Utility Status Bar -->
+  <rect x="36" y="438" width="560" height="54" fill="#F4F4F2" stroke="#000000" stroke-width="2"/>
+  <text x="56" y="470" font-family="'Silkscreen', monospace" font-size="12" fill="#000000">STATUS: ACTIVE PLAYBACK · CASSETTE DA</text>
+  <text x="500" y="470" font-family="'Silkscreen', monospace" font-size="12" fill="#000000">[LOOP ON]</text>
+</svg>

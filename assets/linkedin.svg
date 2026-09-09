@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 440" width="320" height="440" style="background:#000000;">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&amp;display=swap');
+      .chicago-bar { font-family: 'Silkscreen', monospace; font-size: 13px; font-weight: bold; fill: #FFFFFF; letter-spacing: 1.5px; }
+      .tile-title { font-family: 'Silkscreen', monospace; font-size: 22px; font-weight: bold; fill: #000000; letter-spacing: 1.5px; }
+      .tile-subtitle { font-family: 'Silkscreen', monospace; font-size: 12px; font-weight: bold; fill: #000000; letter-spacing: 1px; }
+      .status-text { font-family: 'Silkscreen', monospace; font-size: 12px; fill: #000000; letter-spacing: 0.5px; }
+      .dest-label { font-family: 'Silkscreen', monospace; font-size: 11px; fill: #FFFFFF; letter-spacing: 1.5px; }
+      .dest-uri-line1 { font-family: 'Silkscreen', monospace; font-size: 12px; font-weight: bold; fill: #FFFFFF; letter-spacing: 1px; }
+      .dest-uri-line2 { font-family: 'Silkscreen', monospace; font-size: 12.5px; font-weight: bold; fill: #FFFFFF; letter-spacing: 0.8px; }
+    </style>
+  </defs>
+
+  <!-- Hard Black Offset Shadow -->
+  <rect x="10" y="10" width="300" height="420" fill="#000000"/>
+
+  <!-- Main Card Body -->
+  <rect x="4" y="4" width="302" height="422" fill="#FBFBFA" stroke="#000000" stroke-width="4"/>
+  <rect x="8" y="8" width="294" height="414" fill="none" stroke="#000000" stroke-width="2"/>
+
+  <!-- Mini Title Bar -->
+  <rect x="12" y="12" width="286" height="34" fill="#000000"/>
+  <rect x="18" y="18" width="20" height="20" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="46" y="34" class="chicago-bar">CONTACT // 01</text>
+  <text x="286" y="34" text-anchor="end" font-family="'Silkscreen', monospace" font-size="11" fill="#FFFFFF">[NET]</text>
+
+  <!-- 1-Bit LinkedIn Icon in Black -->
+  <g transform="translate(24, 62)">
+    <rect x="0" y="0" width="68" height="68" fill="#000000"/>
+    <rect x="4" y="4" width="60" height="60" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+    <rect x="8" y="8" width="52" height="52" fill="#000000"/>
+    <!-- 'in' in white -->
+    <circle cx="21" cy="23" r="4.5" fill="#FFFFFF"/>
+    <rect x="17" y="31" width="8" height="22" fill="#FFFFFF"/>
+    <rect x="29" y="31" width="8" height="22" fill="#FFFFFF"/>
+    <path d="M 29 38 C 29 31 43 31 43 39 L 43 53 L 36 53 L 36 41 C 36 36 34 37 32 40 L 32 53 L 29 53 Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Title & Subtitle with increased font sizes -->
+  <text x="106" y="92" class="tile-title">LinkedIn</text>
+  <text x="106" y="116" class="tile-subtitle">PROFESSIONAL_NET</text>
+
+  <!-- Mid separator line with notched ends -->
+  <line x1="24" y1="148" x2="286" y2="148" stroke="#000000" stroke-width="2"/>
+  <rect x="24" y="145" width="6" height="6" fill="#000000"/>
+  <rect x="280" y="145" width="6" height="6" fill="#000000"/>
+
+  <!-- Status Box -->
+  <rect x="24" y="170" width="262" height="96" fill="#F4F4F2" stroke="#000000" stroke-width="2"/>
+  <rect x="24" y="170" width="262" height="22" fill="#000000"/>
+  <text x="32" y="186" font-family="'Silkscreen', monospace" font-size="11" fill="#FFFFFF" letter-spacing="1">LINK STATUS &amp; PROTOCOL</text>
+  <text x="36" y="218" class="status-text">STATUS: OPEN TO DEV</text>
+  <text x="36" y="244" class="status-text">CONN: ESTABLISHED</text>
+
+  <!-- Destination URI Handle Block with complete link -->
+  <g transform="translate(24, 286)">
+    <rect x="0" y="0" width="262" height="114" fill="#000000"/>
+    <rect x="4" y="4" width="254" height="106" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="131" y="32" text-anchor="middle" class="dest-label">&gt; DESTINATION URI &lt;</text>
+    <line x1="16" y1="44" x2="246" y2="44" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="131" y="70" text-anchor="middle" class="dest-uri-line1">linkedin.com</text>
+    <text x="131" y="92" text-anchor="middle" class="dest-uri-line2">/in/shakeelsaga</text>
+  </g>
+</svg>
